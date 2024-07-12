@@ -1,0 +1,13 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner y=new Scanner(System.in);
+        int year=y.nextInt();
+        if(year%4==0){
+            System.out.println("it is a leap year");
+        }
+        else{
+            System.out.println("it not a leap year");
+        }
+    }
+}
