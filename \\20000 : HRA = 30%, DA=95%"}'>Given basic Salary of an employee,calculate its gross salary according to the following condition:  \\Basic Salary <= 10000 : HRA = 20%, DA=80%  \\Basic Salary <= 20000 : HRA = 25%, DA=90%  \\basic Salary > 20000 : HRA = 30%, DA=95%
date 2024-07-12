@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    long b_salary = sc.nextLong();
+    double hra,da,salary;
+    if(b_salary<=10000){
+      hra = b_salary*0.2;
+      da = b_salary*0.8;
+      salary = b_salary+hra+da;
+    }else if(b_salary<=20000 && b_salary>10000){
+      hra = b_salary*0.25;
+      da = b_salary*0.9;
+      salary = b_salary+hra+da;
+    }else{
+      hra = b_salary*0.3;
+      da = b_salary*0.95;
+      salary = b_salary+hra+da;
+    }
+    System.out.printf("Rs."+"%.2f",salary);
+    
+    }
+    }
+    
