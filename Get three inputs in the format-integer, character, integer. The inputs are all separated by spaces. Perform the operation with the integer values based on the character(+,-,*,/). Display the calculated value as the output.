@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class main{
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in);
+    long n1 =sc.nextLong();
+    char s = sc.next().charAt(0);
+    long n2 = sc.nextLong();
+    if(s== '+'){
+      System.out.println(n1+n2);
+    }else if(s== '-'){
+      System.out.println(n1-n2);
+    }else if(s=='*'){
+      System.out.println(n1*n2);
+    }else{
+      System.out.println(n1/n2);
+    }
+  }
+}
